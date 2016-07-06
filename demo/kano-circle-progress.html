@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+        <script type="text/javascript">
+            window.Polymer = {
+                dom: 'shadow'
+            };
+        </script>
         <link rel="import" href="../kano-circle-progress.html">
         <style is="custom-style">
             kano-circle-progress {
@@ -10,6 +15,9 @@
                 height: 50px;
                 --kano-circle-progress: {
                     stroke: blue;
+                }
+                --kano-circle-progress-back: {
+                    stroke: green;
                 }
             }
         </style>

@@ -22,13 +22,12 @@ Custom property | Description | Default
     :host {
         display: block;
     }
-    :host #circle-full {
+    #circle-full {
         fill: transparent;
-        stroke: var(--color-lightgrey, lightgrey) !important;
         stroke-linecap: round;
-        display: none;
+        @apply(--kano-circle-progress-back);
     }
-    :host #circle {
+    #circle {
         fill: transparent;
         stroke: white;
         transition: stroke-dashoffset linear 200ms;
